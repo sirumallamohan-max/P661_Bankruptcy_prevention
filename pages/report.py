@@ -95,7 +95,7 @@ def main():
         #time.sleep(3)  # Simulating a delay
         df = load_data("data/data.xlsx")
     
-    st.title("Bankruptcy Analysis Dataset Report Donload")
+    st.title("Bankruptcy Analysis Dataset Report Download")
     my_bar = st.progress(0)
     if st.button("Generate EDA and PDF"):
         plots = []
