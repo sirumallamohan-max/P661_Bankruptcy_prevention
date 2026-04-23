@@ -1,4 +1,4 @@
-# streamlit_app.py
+# app.py
 import streamlit as st
 
 def main():
@@ -8,11 +8,11 @@ def main():
     dataset_page = st.Page("pages/dataset.py", title="Dataset", icon="📋")
     analysis_page = st.Page("pages/data.py", title="Exploratory Data Analysis", icon="📊")
     predict_page = st.Page("pages/predict.py", title="Predict", icon="🧠")
-
+    report_page = st.Page("pages/report.py", title="Download", icon="⬇️")
 
     #st.sidebar.title("My App Title")
     # Initialize navigation
-    pg = st.navigation([home_page, dataset_page,analysis_page,predict_page],position="top")
+    pg = st.navigation([home_page, dataset_page,analysis_page,predict_page,report_page],position="top")
     
     # Optional: Shared elements like a global sidebar
     # st.sidebar.text("Global App Version 1.0")
